@@ -9,10 +9,10 @@ RUSTFLAGS ?= -g
 
 # this target should build all executables for all tests
 all:
-	@echo "Please set a concrete build command here"
-	false
+	$(CC) $(CFLAGS) -o sort sort.c
 
 # C example:
+
 #all:
 #	$(CC) $(CFLAGS) -o sort sort.c
 
